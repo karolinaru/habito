@@ -10,4 +10,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 570px) {
+    height: 100px;
+    width: 100px;
+  }
+  @media (max-width: 480px) {
+    height: 70px;
+    width: 70px;
+    margin: 15px;
+  }
+
+  svg {
+    @media (max-width: 570px) {
+      height: 90px;
+      width: 90px;
+    }
+    @media (max-width: 480px) {
+      height: 60px;
+      width: 60px;
+    }
+  }
 }

@@ -22,17 +22,20 @@ export const SideBar: React.FunctionComponent = () => {
         },
         {
           name: t("Your habits"),
-          url: "/summary",
+          // url: "/summary",
+          url: "/habito/summary",
           key: "summary",
         },
         {
           name: t("Daily habits"),
-          url: "/daily",
+          url: "/habito/daily",
+          // url: "/daily",
           key: "daily",
         },
         {
           name: t("Weekly habits"),
-          url: "/weekly",
+          url: "/habito/weekly",
+          // url: "/weekly",
           key: "weekly",
         },
       ],

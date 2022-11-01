@@ -177,7 +177,6 @@ const AddHabitPanel: FunctionComponent<IAddHabitPanelProps> = ({
         onClick={handleAddNewHabit}
         allowDisabledFocus
       />
-      <img className="rocket-img" src={rocket} />
     </div>
   );
 };

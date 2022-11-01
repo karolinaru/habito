@@ -3,16 +3,13 @@
 .new-habit {
   padding-left: 10px;
   z-index: 2;
-  // background-color: $backgroundGray;
-}
-
-.ms-Label {
-  font-size: 40px;
-  color: $mainFontColor;
 }
 
 .ms-Button-flexContainer {
-  font-size: 25px;
+  font-size: 20px;
+  @media (max-width: 480px) {
+    font-size: 15px;
+  }
 }
 
 .new-habit {
@@ -21,6 +18,11 @@
     margin-top: 15px;
     position: relative;
     left: 35%;
+    @media (max-width: 580px) {
+      span {
+        font-size: 15px;
+      }
+    }
   }
   .ms-Dropdown-container {
     display: flex;
@@ -31,11 +33,10 @@
   .ms-Dropdown {
     width: 60%;
     .ms-Dropdown-title {
-      height: 52px;
       border-radius: 15px;
     }
     .ms-Dropdown-caretDownWrapper {
-      height: 48px;
+      background-color: transparent;
       margin-right: 9px;
     }
   }
@@ -44,24 +45,38 @@
 .ms-Dropdown-callout {
   .ms-Dropdown-item {
     background-color: $mainYellow;
-    // border-bottom: 1px white solid;
     &:hover {
       background-color: $backgroundGray;
     }
   }
 }
-.ms-Panel-headerText {
-  font-size: 40px;
+.ms-Panel {
+  &-main {
+    background-color: $backgroundGray;
+    background-image: url("./../../images/rocket.png");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &-headerText {
+    font-size: 30px;
+  }
+  &-commands {
+    background-color: $backgroundGray;
+  }
 }
 
 .dropdowns {
-  height: 600px;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 
   .ms-Dropdown {
     font-size: 20px;
+    @media (max-width: 580px) {
+      font-size: 15px;
+    }
     span {
       background-color: $mainYellow;
       border: none;
@@ -75,10 +90,4 @@
 
 .ms-Dropdown-optionText {
   height: 30px;
-}
-
-.rocket-img {
-  left: 325px;
-  position: absolute;
-  bottom: 0px;
 }

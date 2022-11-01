@@ -1,10 +1,5 @@
 @import "./../../variables.scss";
 
-.label--h1 {
-  font-size: 40px;
-  color: $mainFontColor;
-}
-
 .section {
   border-radius: 30px;
   border: solid 2px #cdcdcd;
@@ -12,16 +7,20 @@
   box-shadow: -1px 13px 38px -16px #cdcdcd;
   margin: 30px;
 
+  @media (max-width: 570px) {
+    width: 80%;
+  }
+
+  @media (max-width: 480px) {
+    width: 70%;
+  }
+
   &__extended {
-    height: 200px;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
-}
-
-.ms-Panel-main {
-  background-color: $backgroundGray;
 }
 
 .icon {
@@ -29,7 +28,7 @@
     &:hover {
       cursor: pointer;
     }
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 900;
     color: $mainFontColor;
     padding-right: 10px;
@@ -38,7 +37,7 @@
     &:hover {
       cursor: pointer;
     }
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 500;
     padding-right: 10px;
     color: $mainFontColor;
@@ -50,6 +49,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+  label {
+    font-size: 25px;
+    @media (max-width: 480px) {
+      font-size: 20px;
+    }
+  }
 }
 .icons-wrapper {
   display: flex;

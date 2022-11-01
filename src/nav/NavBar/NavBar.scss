@@ -12,6 +12,11 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    @media (max-width: 480px) {
+      svg {
+        width: 80%;
+      }
+    }
   }
 
   .name-wrapper {
@@ -23,8 +28,11 @@
   .app-name {
     margin-left: 30px;
     color: $mainFontColor;
+    font-size: 30px;
     // font-family: "Muli";
-
+    @media (max-width: 480px) {
+      font-size: 25px;
+    }
     &--moved {
       position: relative;
       left: 250px;

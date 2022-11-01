@@ -14,9 +14,20 @@
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
+
+  &__text-section {
+    height: calc(100vh - 80px);
+    background-image: url("./../../images/add_habit_women.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 500px 250px;
+  }
   h1 {
-    font-size: 40px;
+    font-size: 25px;
     margin-top: 100px;
+    @media (max-width: 480px) {
+      font-size: 20px;
+    }
   }
   a {
     text-decoration: none;

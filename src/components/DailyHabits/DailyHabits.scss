@@ -1,26 +1,12 @@
 @import "./../../variables.scss";
 
 .label--h1 {
-  font-size: 40px;
+  font-size: 25px;
   color: $mainFontColor;
-}
-
-.ms-Panel-main {
-  background-color: $backgroundGray;
-}
-
-.icon__chevron {
-  &:hover {
-    cursor: pointer;
+  padding-left: 30px;
+  @media (max-width: 480px) {
+    font-size: 20px;
   }
-  font-size: 40px;
-}
-
-.habit-title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
 }
 
 .daily-habits {
@@ -36,4 +22,10 @@
   @include turquiseButton;
   margin: 0 auto;
   width: 500px;
+  @media (max-width: 570px) {
+    width: 300px;
+  }
+  @media (max-width: 480px) {
+    width: 200px;
+  }
 }
