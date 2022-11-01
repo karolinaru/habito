@@ -1,0 +1,37 @@
+@import "./../../variables.scss";
+
+.habit-summary {
+  @include waveBackgroundWithForest;
+  display: flex;
+  flex-direction: column;
+
+  .label--h2 {
+    font-size: 20px;
+    padding-left: 35px;
+    padding-bottom: 40px;
+  }
+  .label--h1 {
+    padding-left: 35px;
+  }
+}
+
+.square-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.chevron-rigth {
+  padding-left: 30px;
+  padding-top: 28px;
+  color: $mainFontColor;
+  font-size: 30px;
+  &:active {
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,49 @@
+$mainYellow: #f2c230;
+$mainFontColor: #3a3636;
+$backgroundGray: #f2f2f0;
+// $font-family-muli: "muli", sans-serif;
+$turquoise: #03dac5;
+$purple: #c93ade;
+
+@mixin linkBtn {
+  text-decoration: none;
+  color: $mainFontColor;
+}
+
+@mixin turquiseButton {
+  background-color: $turquoise;
+  border-radius: 26px;
+  border: 1px solid $turquoise;
+  font-size: 20px;
+  height: 50px;
+  // width: 70%;
+  color: $mainFontColor;
+  box-shadow: -1px 13px 38px -16px #8b8282;
+
+  &:hover {
+    background-color: $purple;
+    border: 1px solid $purple;
+    color: $backgroundGray;
+  }
+}
+
+@mixin waveBackground {
+  background-color: $backgroundGray;
+  background-image: url("./images/waves/wave4.svg"),
+    url("./images/waves/wave2.svg"), url("./images/waves/wave3.svg"),
+    url("./images/waves/wave1.svg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 80px);
+}
+
+@mixin waveBackgroundWithForest {
+  background-color: $backgroundGray;
+  background-image: url("./images/forest.svg"), url("./images/waves/wave4.svg"),
+    url("./images/waves/wave2.svg"), url("./images/waves/wave3.svg"),
+    url("./images/waves/wave1.svg");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 80px);
+  background-position-x: left;
+}

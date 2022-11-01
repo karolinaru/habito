@@ -1,0 +1,39 @@
+@import "./../../variables.scss";
+
+.label--h1 {
+  font-size: 40px;
+  color: $mainFontColor;
+}
+
+.ms-Panel-main {
+  background-color: $backgroundGray;
+}
+
+.icon__chevron {
+  &:hover {
+    cursor: pointer;
+  }
+  font-size: 40px;
+}
+
+.habit-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.weekly-habits {
+  @include waveBackground;
+  display: flex;
+  flex-direction: column;
+  .label--h1 {
+    padding-left: 35px;
+  }
+}
+
+.add-habit__button {
+  @include turquiseButton;
+  margin: 0 auto;
+  width: 500px;
+}

@@ -1,0 +1,67 @@
+@import "./../../variables.scss";
+
+.label--h1 {
+  font-size: 40px;
+  color: $mainFontColor;
+}
+
+.section {
+  border-radius: 30px;
+  border: solid 2px #cdcdcd;
+  background-color: #e6e6e6;
+  box-shadow: -1px 13px 38px -16px #cdcdcd;
+  margin: 30px;
+
+  &__extended {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.ms-Panel-main {
+  background-color: $backgroundGray;
+}
+
+.icon {
+  &__chevron {
+    &:hover {
+      cursor: pointer;
+    }
+    font-size: 40px;
+    font-weight: 900;
+    color: $mainFontColor;
+    padding-right: 10px;
+  }
+  &__delete {
+    &:hover {
+      cursor: pointer;
+    }
+    font-size: 35px;
+    font-weight: 500;
+    padding-right: 10px;
+    color: $mainFontColor;
+  }
+}
+
+.habit-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.icons-wrapper {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  padding-top: 15px;
+}
+
+.dialog-button {
+  @include turquiseButton;
+  &__cancel {
+    background-color: transparent;
+  }
+}

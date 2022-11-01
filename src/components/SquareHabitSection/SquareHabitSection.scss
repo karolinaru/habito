@@ -1,0 +1,13 @@
+@import "./../../variables.scss";
+
+.square-habit {
+  height: 130px;
+  width: 130px;
+  border: 1px solid $mainYellow;
+  border-radius: 10px;
+  background-color: $mainYellow;
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
