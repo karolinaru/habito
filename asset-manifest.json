@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/habito/static/css/main.2e8e6ab8.css",
+    "main.js": "/habito/static/js/main.9a66e8d2.js",
+    "static/media/rocket.png": "/habito/static/media/rocket.cf8271c71366cd414f4b.png",
+    "static/media/forest.svg": "/habito/static/media/forest.bd79dd19c6745c84189b.svg",
+    "static/media/drinking.svg": "/habito/static/media/drinking.2e7a50678f848ea3dbbc6aaec04f28f6.svg",
+    "static/media/reading.svg": "/habito/static/media/reading.c1f8578eabaa8df034a4a80ad66cd999.svg",
+    "static/media/add_habit_women.svg": "/habito/static/media/add_habit_women.a2d2427f9da7d68224d3f131b8a44f43.svg",
+    "static/media/exercise.svg": "/habito/static/media/exercise.843f8d9994e611088f5a4cf72145f078.svg",
+    "static/media/user.svg": "/habito/static/media/user.0fde7c43b0c8ecfe30e9b8191c698946.svg",
+    "static/media/chart.svg": "/habito/static/media/chart.a58feeeb22a80495ff0356ec5c15f21d.svg",
+    "index.html": "/habito/index.html",
+    "static/media/wave3.svg": "/habito/static/media/wave3.d4e0a6b003497bde6387.svg",
+    "static/media/wave1.svg": "/habito/static/media/wave1.51b73bf5bdca62d32be5.svg",
+    "static/media/yellow-wave.svg": "/habito/static/media/yellow-wave.74f963f08926c9a5df35.svg",
+    "static/media/wave4.svg": "/habito/static/media/wave4.86b0c0b81b8dd5ee2c66.svg",
+    "static/media/wave2.svg": "/habito/static/media/wave2.fdfc5fd7bf7d58b969be.svg",
+    "main.2e8e6ab8.css.map": "/habito/static/css/main.2e8e6ab8.css.map",
+    "main.9a66e8d2.js.map": "/habito/static/js/main.9a66e8d2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e8e6ab8.css",
+    "static/js/main.9a66e8d2.js"
+  ]
+}
