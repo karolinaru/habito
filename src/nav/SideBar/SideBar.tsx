@@ -16,26 +16,23 @@ export const SideBar: React.FunctionComponent = () => {
       links: [
         {
           name: t("Home"),
-          url: "/",
+          url: "#/",
           expandAriaLabel: "Home section",
           key: "home",
         },
         {
           name: t("Your habits"),
-          // url: "/summary",
-          url: "/habito/summary",
+          url: "#/summary",
           key: "summary",
         },
         {
           name: t("Daily habits"),
-          url: "/habito/daily",
-          // url: "/daily",
+          url: "#/daily",
           key: "daily",
         },
         {
           name: t("Weekly habits"),
-          url: "/habito/weekly",
-          // url: "/weekly",
+          url: "#/weekly",
           key: "weekly",
         },
       ],
