@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import "./App.scss";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import WelcomePage from "../components/WelcomePage/WelcomePage";
 import DailyHabits from "../components/DailyHabits/DailyHabits";
 import { initializeIcons } from "@fluentui/react/lib/Icons";
