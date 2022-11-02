@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/habito/static/css/main.30f5bf4c.css",
-    "main.js": "/habito/static/js/main.ecf16f44.js",
+    "main.js": "/habito/static/js/main.6d5a8925.js",
     "static/media/rocket.png": "/habito/static/media/rocket.cf8271c71366cd414f4b.png",
     "static/media/forest.svg": "/habito/static/media/forest.bd79dd19c6745c84189b.svg",
     "static/media/drinking.svg": "/habito/static/media/drinking.2e7a50678f848ea3dbbc6aaec04f28f6.svg",
@@ -17,10 +17,10 @@
     "static/media/wave4.svg": "/habito/static/media/wave4.86b0c0b81b8dd5ee2c66.svg",
     "static/media/wave2.svg": "/habito/static/media/wave2.fdfc5fd7bf7d58b969be.svg",
     "main.30f5bf4c.css.map": "/habito/static/css/main.30f5bf4c.css.map",
-    "main.ecf16f44.js.map": "/habito/static/js/main.ecf16f44.js.map"
+    "main.6d5a8925.js.map": "/habito/static/js/main.6d5a8925.js.map"
   },
   "entrypoints": [
     "static/css/main.30f5bf4c.css",
-    "static/js/main.ecf16f44.js"
+    "static/js/main.6d5a8925.js"
   ]
 }
