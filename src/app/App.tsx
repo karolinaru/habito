@@ -1,6 +1,11 @@
 import React, { useContext, useState } from "react";
 import "./App.scss";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  HashRouter as Router,
+  Routes,
+  Route,
+  HashRouter,
+} from "react-router-dom";
 import WelcomePage from "../components/WelcomePage/WelcomePage";
 import DailyHabits from "../components/DailyHabits/DailyHabits";
 import { initializeIcons } from "@fluentui/react/lib/Icons";
@@ -22,7 +27,7 @@ const App = () => {
   return (
     <>
       <HabitContext>
-        <Router basename={process.env.PUBLIC_URL}>
+        <HashRouter>
           <NavBar sideBarVisible={sideBarVisible} showSideBar={showSideBar} />
           <div className="nav-bar__wrapper">
             {sideBarVisible ? <SideBar /> : ""}
@@ -39,7 +44,7 @@ const App = () => {
               </>
             </div>
           </div>
-        </Router>
+        </HashRouter>
       </HabitContext>
     </>
   );
