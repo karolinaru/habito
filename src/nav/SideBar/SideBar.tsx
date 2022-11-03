@@ -5,10 +5,16 @@ import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-export const SideBar: React.FunctionComponent = () => {
-  const { t } = useTranslation();
+interface ISideBarProps {
+  sideBarVisible: boolean;
+  showSideBar: () => void;
+}
 
-  const [selectedKey, setSelectedKey] = useState<string>("");
+export const SideBar: React.FunctionComponent<ISideBarProps> = ({
+  sideBarVisible,
+  showSideBar,
+}) => {
+  const { t } = useTranslation();
   const location = useLocation();
 
   const navLinkGroups: INavLinkGroup[] = [
@@ -39,16 +45,20 @@ export const SideBar: React.FunctionComponent = () => {
     },
   ];
 
-  useEffect(() => {
-    const currentRoute = location.pathname.substring(
-      location.pathname.lastIndexOf("/") + 1
-    );
-    setSelectedKey(currentRoute);
-  }, [location.pathname]);
+  // useEffect(() => {
+  //   const currentRoute = location.pathname.substring(
+  //     location.pathname.lastIndexOf("/") + 1
+  //   );
+  //   setSelectedKey(currentRoute);
+  // }, [location.pathname]);
+
+  const currentRoute = location.pathname.substring(
+    location.pathname.lastIndexOf("/") + 1
+  );
 
   return (
     <Nav
-      selectedKey={selectedKey === "" ? "home" : selectedKey}
+      selectedKey={currentRoute === "" ? "home" : currentRoute}
       ariaLabel="Nav"
       groups={navLinkGroups}
       className="sidebar"

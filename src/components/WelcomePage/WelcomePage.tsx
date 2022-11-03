@@ -22,7 +22,6 @@ const WelcomePage = () => {
           <PrimaryButton className="start-button" text={t("Start now")} />
         </Link>
       </section>
-      {/* <AddHabit /> */}
     </div>
   );
 };
