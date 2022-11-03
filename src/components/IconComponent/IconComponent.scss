@@ -2,6 +2,15 @@
 
 .icon {
   padding: 0 30px;
+  @media (max-width: 770px) {
+    padding: 0 20px;
+  }
+  @media (max-width: 580px) {
+    padding: 0 12px;
+  }
+  @media (max-width: 480px) {
+    padding: 0 6px;
+  }
 
   .ms-Button--icon:hover {
     background-color: transparent;
@@ -9,11 +18,14 @@
   i {
     color: $mainFontColor;
     font-size: 60px;
-    @media (max-width: 580px) {
+    @media (max-width: 770px) {
       font-size: 50px;
     }
-    @media (max-width: 480px) {
+    @media (max-width: 580px) {
       font-size: 40px;
+    }
+    @media (max-width: 480px) {
+      font-size: 30px;
     }
   }
   &--clicked {
