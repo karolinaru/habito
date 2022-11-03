@@ -7,14 +7,6 @@
   box-shadow: -1px 13px 38px -16px #cdcdcd;
   margin: 30px;
 
-  @media (max-width: 570px) {
-    width: 80%;
-  }
-
-  @media (max-width: 480px) {
-    width: 70%;
-  }
-
   &__extended {
     height: 150px;
     display: flex;
@@ -32,6 +24,9 @@
     font-weight: 900;
     color: $mainFontColor;
     padding-right: 10px;
+    @media (max-width: 480px) {
+      font-size: 20px;
+    }
   }
   &__delete {
     &:hover {
@@ -41,6 +36,9 @@
     font-weight: 500;
     padding-right: 10px;
     color: $mainFontColor;
+    @media (max-width: 480px) {
+      font-size: 20px;
+    }
   }
 }
 

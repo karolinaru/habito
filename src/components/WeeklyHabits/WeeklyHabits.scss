@@ -1,19 +1,5 @@
 @import "./../../variables.scss";
 
-.icon__chevron {
-  &:hover {
-    cursor: pointer;
-  }
-  font-size: 30px;
-}
-
-.habit-title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-}
-
 .weekly-habits {
   @include waveBackground;
   display: flex;
