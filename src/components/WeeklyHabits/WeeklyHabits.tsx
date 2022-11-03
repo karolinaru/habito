@@ -21,8 +21,6 @@ const WeeklyHabits: FunctionComponent = () => {
     setIsPanelOpen(true);
   };
 
-  console.log(habitsData);
-
   return (
     <div className="new-habit-root">
       <div className="weekly-habits">

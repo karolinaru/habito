@@ -1,3 +1,5 @@
+@import "./../../variables.scss";
+
 .sidebar {
   width: 250px;
   height: 100%;
@@ -11,4 +13,8 @@
       font-size: 15px;
     }
   }
+}
+
+.ms-Nav-linkText {
+  color: $mainFontColor;
 }

@@ -30,7 +30,14 @@ const App = () => {
         <HashRouter>
           <NavBar sideBarVisible={sideBarVisible} showSideBar={showSideBar} />
           <div className="nav-bar__wrapper">
-            {sideBarVisible ? <SideBar sideBarVisible={sideBarVisible} showSideBar={showSideBar}/> : ""}
+            {sideBarVisible ? (
+              <SideBar
+                sideBarVisible={sideBarVisible}
+                showSideBar={showSideBar}
+              />
+            ) : (
+              ""
+            )}
             <div className="nav-bar__router">
               <>
                 <Routes>
